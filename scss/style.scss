@@ -1,5 +1,6 @@
 @import 'config';
 @import 'toggler';
+@import 'utilities';
 
 
 // Header
@@ -106,6 +107,42 @@ header {
         
     }
 
+}
+
+// About 
+#about {
+    color: $font-color;
+    margin-top: 1em;
+    .container-fluid {
+        background: $dark2;
+        padding: 1.5em;
+
+        h2 {
+            font-weight: 700;
+            margin-top: -1.5em;
+            margin-bottom: 1em;
+            text-align: center;
+            text-shadow: $text-shadow;
+        }
+        .about-image {
+            margin-bottom: 1em;
+            img{
+                border: 3px solid $logo-color;
+                border-radius: 10px;
+                width: 100%;
+                padding: .5em;
+            }
+        }
+        
+        .about-content {
+            p {
+                font-weight: 300;
+                text-align: justify;
+            }
+        }
+
+
+    }
 }
 
 @import 'xl';
