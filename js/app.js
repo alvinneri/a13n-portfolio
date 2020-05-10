@@ -5,6 +5,7 @@ btn.addEventListener('click', ()=>{
     if(!menuOpen){
         btn.classList.add('open');
         navlinks.classList.add('show-menu');
+        
         menuOpen = true;
     }else{
         btn.classList.remove('open');
