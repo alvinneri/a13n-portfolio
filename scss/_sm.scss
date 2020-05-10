@@ -11,6 +11,33 @@
     }
     
     #about {
-        margin-top : 4em;
+        margin-top: 4em;
+        
+        .container-about {
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            box-shadow:   4px 4px 15px #000;
+
+            .about-image{
+                width: 38%;
+            }
+
+            .about-content {
+                width: 58%;
+                
+            }
+        }
+    }
+
+    #skills {
+
+        .container-skills {
+            width: 90%;
+            margin: 0 auto;
+            box-shadow:   4px 4px 15px #000;
+        }
     }
 }

@@ -7,7 +7,7 @@
 header {
     width: 100%;
     height: 100vh;
-    border: 1px solid red;
+    
 }
 
 .container-margin {
@@ -115,18 +115,20 @@ header {
 #about {
     color: $font-color;
     margin-top: 1em;
-    .container-fluid {
-        background: $dark2;
-        padding: 1.5em;
 
-        h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-top: -1.3em;
-            margin-bottom: 1em;
-            text-align: center;
-            text-shadow: $text-shadow;
-        }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: -.5em;
+        text-align: center;
+        text-shadow: $text-shadow;
+        text-transform: uppercase;
+    }
+    .container-about {
+        background: $dark2;
+        padding: 2em 1.5em;
+
+       
         .about-image {
             margin-bottom: 1em;
             img{
@@ -145,6 +147,52 @@ header {
         }
 
 
+    }
+}
+
+// SKILLS
+.container-skills {
+    
+    background: $dark3;
+    color: $font-color;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    h2{
+        position: absolute;
+        top:15%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: -1.2em;
+        text-shadow: $text-shadow;
+        text-align: center;
+    }
+    p{
+        margin-top: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        
+    }
+}
+
+// Portfolio
+#portfolio {
+    .container-portfolio {
+       margin-top: 2em;
+       margin-bottom: 2em;
+        color: $font-color;
+
+        h2{
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+        }
     }
 }
 
