@@ -127,6 +127,7 @@ header {
     .container-about {
         background: $dark2;
         padding: 2em 1.5em;
+        
 
        
         .about-image {
@@ -161,6 +162,7 @@ header {
     align-items: center;
     flex-wrap: wrap;
     
+    
     h2{
         position: absolute;
         top:15%;
@@ -186,13 +188,45 @@ header {
     .container-portfolio {
        margin-top: 2em;
        margin-bottom: 2em;
-        color: $font-color;
+       color: $font-color;
 
         h2{
             font-size: 2.5rem;
             font-weight: 700;
             text-align: center;
         }
+
+        .flex-projects {
+            margin: 2em 0;
+            display: flex;
+            justify-content: space-between;
+            height: 20vh;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                width: 1em;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $dark3;
+                outline: 1px solid slategrey;
+            }
+
+
+
+            
+            img {
+                margin: 0 .5em;
+                height: 100%;
+            };
+        
+        }
+
+       
     }
 }
 
