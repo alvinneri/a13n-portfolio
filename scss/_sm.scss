@@ -2,7 +2,15 @@
 /* Small (sm) devices (landscape phones 576 and up */
 @media (min-width : 576px) {
 
+    .landing-image {
+        
+        img {  
+            width: 100%;
+        }
+        
+    }
+    
     #about {
-        margin-top : 2em
+        margin-top : 2em;
     }
 }
