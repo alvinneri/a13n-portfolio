@@ -39,4 +39,32 @@
             margin-top: -.9em
         }
     }
+
+    #contacts {
+
+        .container-footer{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+
+            .container-contacts {
+                width: 28%;
+               
+            }
+
+            .container-contacts:nth-child(2) {
+
+                h2 {
+                    font-size: 2rem;
+                }
+                border: none;
+                border-left: 2px solid $logo-color;
+                border-right: 2px solid $logo-color;
+                margin: 0 1em;
+            }
+        }
+    }
+
+    
 }

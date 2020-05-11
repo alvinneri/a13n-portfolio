@@ -194,6 +194,7 @@ header {
             font-size: 2.5rem;
             font-weight: 700;
             text-align: center;
+            text-shadow: $text-shadow;
         }
 
         .flex-projects {
@@ -216,17 +217,135 @@ header {
                 outline: 1px solid slategrey;
             }
 
-
-
-            
-            img {
+            a { 
+                padding: .5em;
+                
+                height: 95%;
+                
+                &:hover{
+                    box-shadow: 4px 4px 10px black;
+                }
+                img {
                 margin: 0 .5em;
                 height: 100%;
+                }
             };
         
         }
 
        
+    }
+}
+
+#contacts {
+    width: 100%;
+    height: 100%;
+    background: $dark3;
+    color: $font-color;
+
+    .container-footer{
+        width: 90%;
+        padding: 2em 0;
+        margin: 0em auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        .container-contacts{
+            width: 100%;
+            text-align: center;
+            margin: 1em 0;
+        }
+
+
+        .container-contacts:nth-child(1) {
+           
+            h2 {
+                color: $logo-color;
+                font-size: 3rem;
+                font-weight: 700;
+                text-shadow: $text-shadow;
+            }
+
+            a {
+                text-decoration: none;
+                color: $font-color;
+                text-shadow: $text-shadow;
+                margin: 0 .5em;
+
+                &:hover{
+                    color: $dark;
+                    
+                }
+            }
+        }
+
+        .container-contacts:nth-child(2) {
+            
+            border-top:2px solid $logo-color;
+            border-bottom:2px solid $logo-color;
+            padding: 1em;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 2.5rem;
+                text-shadow: $text-shadow;
+
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+                // padding: 1em 0;
+                
+                input {
+                    border: none ;
+                    border-bottom: 1px solid $font-color;
+                    background: none;
+
+                    &:focus{
+                        color: $font-color;
+                        outline: none;
+                    }
+                }
+
+                
+                textarea {
+                    border: none;
+                    background: none;
+                    border-bottom: 1px solid $font-color;
+
+                    &:focus {
+                        color: $font-color;
+                        outline: none;
+                    }
+                }
+         
+            }
+
+            button {
+                color: $dark;
+                padding: .5em;
+                width: 100px;
+                border-radius: 10px;
+                background: $font-color;
+                font-size: 1rem;
+                font-weight: 700;
+                border: none;
+                
+                &:focus {
+                    outline: none;
+                    // transform: translateY(-10px);
+                }
+
+                &:hover {
+                    background: $dark;
+                    color: $font-color;
+                }
+            }
+        }
     }
 }
 
