@@ -273,11 +273,15 @@ header {
                 text-decoration: none;
                 color: $font-color;
                 text-shadow: $text-shadow;
-                margin: 0 .5em;
+                margin: 0em .5em;
 
                 &:hover{
                     color: $dark;
                     
+                }
+                
+                i{
+                    margin: .3em 0;
                 }
             }
         }
