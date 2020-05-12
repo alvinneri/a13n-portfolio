@@ -93,6 +93,27 @@ header {
             margin-top: .5em;
            
         }
+
+        button {
+            color: $dark;
+            padding: .5em;
+            width: 150px;
+            border-radius: 10px;
+            background: $font-color;
+            font-size: .8rem;
+            font-weight: 700;
+            border: none;
+            
+            &:focus {
+                outline: none;
+                // transform: translateY(-10px);
+            }
+
+            &:hover {
+                background: $dark3;
+                color: $font-color;
+            }
+        }
     }
 
     .landing-image {
