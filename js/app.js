@@ -13,3 +13,10 @@ btn.addEventListener('click', ()=>{
         menuOpen = false;
     }
 });
+
+var tl = gsap.timeline({defaults:{duration: 1}});
+
+tl.from('.avatar', { width: 200, opacity: 0, duration: 2, ease : 'Back.easeInOut'})
+    .from('.name' , {x:-50, opacity: 0})
+    .from('.lastname' , {x:50, opacity: 0}, "-=.5")
+    .from('.description', {opacity: 0}, "-=.5")
