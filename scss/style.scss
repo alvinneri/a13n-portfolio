@@ -55,6 +55,10 @@ header {
 
             a {
                 color: $font-color;
+
+                &:hover {
+                    color: $logo-color;
+                }
             }
         }
     }
@@ -95,14 +99,15 @@ header {
         }
 
         button {
-            color: $dark;
+            color: $font-color;
             padding: .5em;
             width: 150px;
             border-radius: 10px;
-            background: $font-color;
+            background: $dark3;
             font-size: .8rem;
             font-weight: 700;
             border: none;
+            box-shadow: $text-shadow;
             
             &:focus {
                 outline: none;
@@ -110,7 +115,7 @@ header {
             }
 
             &:hover {
-                background: $dark3;
+                background: $logo-color;
                 color: $font-color;
             }
         }
@@ -279,6 +284,7 @@ header {
             width: 100%;
             text-align: center;
             margin: 1em 0;
+        
         }
 
 
@@ -310,8 +316,10 @@ header {
 
         .container-contacts:nth-child(2) {
             
-            border-top:2px solid $logo-color;
-            border-bottom:2px solid $logo-color;
+            border-top:3px solid $logo-color;
+            border-bottom:3px solid $logo-color;
+            // // box-shadow: 1px 1px 5px black;
+            // border-radius: 10px;
             padding: 1em;
             h2 {
                 text-transform: uppercase;
@@ -322,14 +330,19 @@ header {
             }
 
             form {
-                display: flex;
+                height: 100%;
+                // display: flex;
                 flex-direction: column;
                 // padding: 1em 0;
                 
                 input {
+                    width: 70%;
+                    margin: 0 auto;
+                    display: block;
                     border: none ;
                     border-bottom: 1px solid $font-color;
                     background: none;
+                    font-size: .8rem;
 
                     &:focus{
                         color: $font-color;
@@ -337,8 +350,17 @@ header {
                     }
                 }
 
+                label {
+                    font-size: .8rem; 
+                    display: block;               
+                }
+
                 
                 textarea {
+                    font-size: .8rem;
+                    width: 70%;
+                    margin:  0 auto;
+                    display: block;
                     border: none;
                     background: none;
                     border-bottom: 1px solid $font-color;
@@ -360,6 +382,7 @@ header {
                 font-size: 1rem;
                 font-weight: 700;
                 border: none;
+                box-shadow: $text-shadow;
                 
                 &:focus {
                     outline: none;
@@ -367,8 +390,11 @@ header {
                 }
 
                 &:hover {
-                    background: $dark;
+                    background: $logo-color;
                     color: $font-color;
+
+                    // background: $dark;
+                    // color: $font-color;
                 }
             }
         }

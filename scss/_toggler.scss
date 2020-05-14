@@ -42,10 +42,12 @@
 
     &.open .lines:nth-child(1) {
         transform: rotate(45deg) translate(0px, 11px);
+        background: $logo-color;
     }
 
     &.open .lines:nth-child(3) {
         transform: rotate(-45deg) translate(0px, -11px);
+        background: $logo-color;
     }
 
     
