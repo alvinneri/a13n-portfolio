@@ -15,6 +15,27 @@ btn.addEventListener('click', ()=>{
 });
 
 var tl = gsap.timeline({defaults:{duration: 1}});
+var tl2 = gsap.timeline({onUpdate:updatePercentage});
+const controller = new ScrollMagic.Controller();
+
+tl2.from(".about-image" , {duration: 1, x:-200,opacity: 0})
+    .from(".about-content" , {duration :1, opacity: 0 , ease: 'Slow.easeInOut'})
+
+const scene = new ScrollMagic.Scene({
+    triggerElement : "#about",
+    triggerHook : "onLeave",
+    duration: "100%"
+})
+
+    .setPin("#about")
+    .setTween(tl2)
+    .addTo(controller)
+
+function updatePercentage() {
+    tl2.progress();
+    console.log(tl2.progress());
+    
+}
 
 tl
     .from('.name' , {x:-50, opacity: 0, duration: 1.5,  ease : 'Slow.easeInOut'})
