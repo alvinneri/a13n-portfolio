@@ -18,7 +18,8 @@ var tl = gsap.timeline({defaults:{duration: 1}});
 var tl2 = gsap.timeline({onUpdate:updatePercentage});
 const controller = new ScrollMagic.Controller();
 
-tl2.from(".about-image" , {duration: 1, x:-200,opacity: 0})
+tl2.to('.scrolldown' , {duration: 1, opacity: 0})
+    .from(".about-image" , {duration: 1, x:-200,opacity: 0})
     .from(".about-content" , {duration :1, opacity: 0 , ease: 'Slow.easeInOut'})
 
 const scene = new ScrollMagic.Scene({

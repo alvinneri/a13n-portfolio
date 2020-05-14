@@ -143,6 +143,20 @@ header {
     color: $font-color;
     margin-top: 1em;
     overflow-x: hidden;
+    
+    .scrolldown {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+        h2 {
+            font-size: 2rem;
+            color: $font-color;
+            font-weight: 300;
+            text-transform: none;
+        }
+    }
 
     h2 {
         font-size: 2.5rem;
@@ -290,13 +304,15 @@ header {
 
 
         .container-contacts:nth-child(1) {
-           
-            h2 {
-                color: $logo-color;
-                font-size: 3rem;
+            
+            a h2{
+                text-transform: uppercase;
                 font-weight: 700;
+                font-size: 3rem;
                 text-shadow: $text-shadow;
+                color: $logo-color;
             }
+            
 
             a {
                 text-decoration: none;
@@ -323,6 +339,7 @@ header {
             // border-radius: 10px;
             padding: 1em;
             h2 {
+                
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 2.5rem;
