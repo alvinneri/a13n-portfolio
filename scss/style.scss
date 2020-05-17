@@ -335,8 +335,7 @@ header {
             
             border-top:3px solid $logo-color;
             border-bottom:3px solid $logo-color;
-            // // box-shadow: 1px 1px 5px black;
-            // border-radius: 10px;
+            
             padding: 1em;
             h2 {
                 
@@ -349,23 +348,29 @@ header {
 
             form {
                 height: 100%;
-                // display: flex;
+                width: 70%;
+                margin: 0 auto;
                 flex-direction: column;
                 // padding: 1em 0;
+                text-align: left;
                 
                 input {
-                    width: 70%;
-                    margin: 0 auto;
+                    width: 100%;
+                    padding: 1em;
                     display: block;
                     border: none ;
-                    border-bottom: 1px solid $font-color;
-                    background: none;
+                    border-radius: 5px;
+                    background: $dark2;
                     font-size: .8rem;
+                    margin-bottom: .5em;
 
                     &:focus{
                         color: $font-color;
                         outline: none;
+                        box-shadow : 0px 0px 10px whitesmoke;
                     }
+
+                  
                 }
 
                 label {
@@ -376,16 +381,17 @@ header {
                 
                 textarea {
                     font-size: .8rem;
-                    width: 70%;
-                    margin:  0 auto;
+                    width: 100%;
                     display: block;
                     border: none;
-                    background: none;
-                    border-bottom: 1px solid $font-color;
-
+                    background: $dark2;
+                    border-radius: 5px;
+                    margin-bottom:  .5em;
+                    padding: 1em;
                     &:focus {
                         color: $font-color;
                         outline: none;
+                        box-shadow : 0px 0px 10px whitesmoke;
                     }
                 }
 
@@ -396,8 +402,8 @@ header {
             button {
                 color: $dark;
                 padding: .5em;
-                width: 100px;
-                border-radius: 10px;
+                width: 100%;
+                // border-radius: 10px;
                 background: $font-color;
                 font-size: 1rem;
                 font-weight: 700;
