@@ -1,29 +1,33 @@
-$dark : #313131;
-$dark2 : #414141;
-$dark3 : #525252;
+$dark: #313131;
+$dark2: #414141;
+$dark3: #525252;
 $font-color: #f2f2f2;
 $logo-color: #ca3e47;
-$text-shadow :  2px 2px 4px black;
+$text-shadow: 2px 2px 4px black;
 
-html, body {
-    padding: 0;
-    margin: 0;
-    background: $dark;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: $dark;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
+  text-decoration: none;
+
+  &:hover {
     text-decoration: none;
-
-    &:hover {
-        text-decoration: none;
-    }
-
+  }
 }
-
